@@ -44,6 +44,7 @@ namespace WindowsFormsApp1
         {
             if (Char.IsDigit(e.KeyChar)) return;
             if (e.KeyChar == '.' && ((TextBox)sender).Text.Contains('.') == false) return;
+            if (e.KeyChar == '-' && ((TextBox)sender).Text.Contains('-') == false) return;
             if (e.KeyChar == (char)Keys.Back) return;
             e.Handled = true;
         }
@@ -81,3 +82,4 @@ namespace WindowsFormsApp1
         }
     }
 }
+

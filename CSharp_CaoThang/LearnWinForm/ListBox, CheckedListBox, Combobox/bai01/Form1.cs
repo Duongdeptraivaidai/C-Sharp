@@ -51,9 +51,15 @@ namespace bai01
             txtFirstName.Focus();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+         private void btn_Close_Click(object sender, EventArgs e)
+         {
+             var result = MessageBox.Show("Bạn chắc chắn muốn thoát chương trình chứ?","Thông báo",
+                 MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+             if (result==DialogResult.Yes)
+             {
+                 this.Close();
+             }
+         }
     }
 }
+

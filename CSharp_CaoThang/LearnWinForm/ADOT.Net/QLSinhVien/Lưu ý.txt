@@ -1,0 +1,3 @@
+Hãy đổi "Data Source = <YOUR NAME SERVER>" thành tên server cuả bạn 
+
+string connectionStr = "Data Source=F71-27;Integrated Security=true;Initial Catalog=QLSINHVIEN";
